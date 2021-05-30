@@ -8,7 +8,7 @@ public class TimestampParsingTests
 	public void timestampsParseCorrectly() 
 	{
 		// Format: EEE MMM dd HH:mm:ss zzz yyyy	
-		Position position = new Position("23", "21", "Monday11111 January 09 16:15:00 +0000 2017");
+		Position position = new Position("23", "21", "Monday January 09 16:15:00 +0000 2021");
 	
 		// would throw exception if invalid
 	}
@@ -17,7 +17,7 @@ public class TimestampParsingTests
 	public void invalidTimestampsFailCorrectly() 
 	{
 		// Format: EEE MMM dd HH:mm:ss zzz yyyy		
-		Position position = new Position("23", "21", "Monday January 75 aa:15:00 +0000 2017");
+		Position position = new Position("23", "21", "Monday January 75 aa:15:00 +0000 2021");
 	}
 	
 }
